@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* Lighter background for better readability */
+}
+
+nav {
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    background-color: #2C3E50; /* Darker background for the nav */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ECF0F1; /* Lighter color for text */
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #F39C12; /* Bright accent color */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+#home {
+    background-color: #34495E; /* Softer dark background for the home section */
+    color: #ECF0F1; /* Light text for better contrast */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 92vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#leftsection  {
+    height: 300px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+#rightsection {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#rightsection img{
+    height: 200px;
+    width: 200px;
+}
+
+#about {
+    background-color: #34495E; /* Softer dark background for the about section */
+    color: #ECF0F1; /* Light text for better contrast */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 80vh;
+    gap: 2rem;
+    align-items: center;
+}
+
+#about h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 20px;
+    width: 80%;
+}
+#techstack {
+    background-color: #34495E; /* Softer dark background for the about section */
+    color: #ECF0F1; /* Light text for better contrast */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+}
+
+#techstack ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 80%;
+
+}
+
+#techstack ul li {
+    background-color: #F39C12; /* Bright accent color */
+    color: #ECF0F1; /* Light text for better contrast */
+    padding: 10px;
+    border-radius: 5px;
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    
+}
+
+#projects {
+    background-color: #34495E; /* Softer dark background for the about section */
+    color: #ECF0F1; /* Light text for better contrast */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    height: 100%;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    
+   
+}
+
+
+
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+#projects ul li {
+    background-color: #F39C12; /* Bright accent color */
+    color: #ECF0F1; /* Light text for better contrast */
+    padding: 10px;
+    border-radius: 5px;
+    height: 30rem;
+    width: 65rem;
+    display: flex;
+}
+
+
+#footer {
+    background-color: #2C3E50; /* Dark background for footer */
+    color: #ECF0F1; /* Light text color */
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#contact {
+    width: 100%;
+    max-width: 800px;
+    background-color: #34495E; /* Darker background for contact form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ECF0F1; /* Light text for heading */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #ECF0F1; /* Light color for labels */
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #BDC3C7;
+    border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #F39C12; /* Accent color on focus */
+    outline: none;
+}
+
+#submit-btn {
+    background-color: #F39C12; /* Accent color for submit button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: #E67E22; /* Slightly darker accent color on hover */
+}
+
+#social-media {
+    width: 100%;
+    text-align: center;
+}
+
+#social-media h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ECF0F1; /* Light color for heading */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #ECF0F1; /* Light color for icons */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #F39C12; /* Accent color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.social-icon.facebook:hover {
+    color: #3b5998; /* Facebook color */
+}
+
+.social-icon.twitter:hover {
+    color: #00acee; /* Twitter color */
+}
+
+.social-icon.linkedin:hover {
+    color: #0077b5; /* LinkedIn color */
+}
+
+.social-icon.instagram:hover {
+    color: #C13584; /* Instagram color */
+}
+
+
